@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="https://kit.fontawesome.com/497cd3b73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <h1>
+      <a href="dashboard.html">
+        <i class="fas fa-code"></i> <span class="logo"> Войти в АйТи </span></a>
+    </h1>
+    <ul>
+      <li><a href="profiles.html">Люди</a></li>
+      <li><a href="posts.html">Публикации</a></li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-user"></i>
+          <span class="hide-sm"> Портфолио </span></a>
+      </li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="hide-sm"> Выйти </span></a>
+      </li> 
+    </ul>
+  </nav>
+  <section class="container">
+    <h1 class="large text-primary">
+      Портфолио
+    </h1>
+    <p class="lead">
+      <i class="fas fa-user"></i> Привет, Yaroslav Pryhoda!
+    </p>
+    <div class="dash-buttons">
+      <a href="create-profile.html" class="btn btn-dash">
+        <i class="fas fa-user-circle text-primary"></i>
+        Личные данные</a>
+      <a href="add-experience.html" class="btn btn-dash">
+        <i class="fab fa-black-tie text-primary"></i>
+        Места работы</a>
+      <a href="add-education.html" class="btn btn-dash">
+        <i class="fas fa-graduation-cap text-primary"></i>
+        Образование</a>
+    </div>
+
+    <h2 class="my-2">
+      Опыт работы
+    </h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Компания</th>
+          <th class="hide-sm">Название</th>
+          <th class="hide-sm">Период</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Microsoft Corp</td>
+          <td class="hide-sm">Middle web Developer</td>
+          <td class="hide-sm">20/10/2018-сейчас</td>
+          <td>
+            <button class="btn btn-danger">
+              Удалить
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>EPAM</td>
+          <td class="hide-sm">Junior web Developer</td>
+          <td class="hide-sm">20/10/2015-20/09/2018</td>
+          <td>
+            <button class="btn btn-danger">
+              Удалить
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="my-2">
+      Образование
+    </h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Учебное заведение</th>
+          <th class="hide-sm">Профиль</th>
+          <th class="hide-sm">Период</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>НТУУ КПИ</td>
+          <td class="hide-sm">Телекоммуникации и радиотехника</td>
+          <td class="hide-sm">20/10/2010-30/06/2015</td>
+          <td>
+            <button class="btn btn-danger">
+              Удалить
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="my-2">
+      <button class="btn btn-danger btn-profiles">
+        <i class="fas fa-user-minus"></i>
+        Удалить аккаунт
+      </button>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

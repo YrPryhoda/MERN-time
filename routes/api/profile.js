@@ -29,8 +29,8 @@ router.get('/me', auth, async (req, res) => {
 //@access   Private
 router.post('/', [
   auth,
-  check('status', 'Status is required').not().isEmpty(),
-  check('skills', "Skills is reqired").not().isEmpty(),
+  check('status', 'Укажите свой статус').not().isEmpty(),
+  check('skills', "Заполните графу навыков").not().isEmpty(),
 ], async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -181,10 +181,10 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
 //@access   Private
 router.put('/education', [
   auth,
-  check('school', 'School is required').not().isEmpty(),
-  check('degree', 'Degree is required').not().isEmpty(),
-  check('fieldofstudy', 'Field of study is required').not().isEmpty(),
-  check('from', 'From date is required').not().isEmpty()
+  check('school', 'Указание учебного заведения обязательно').not().isEmpty(),
+  check('degree', 'Укажите сферу изучения').not().isEmpty(),
+  check('fieldofstudy', 'Укажите специальность').not().isEmpty(),
+  check('from', 'С какого времени начали обучения?').not().isEmpty()
 ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -243,7 +243,7 @@ router.get('/github/:username', (req, res) => {
     request(options, (error, response, body) => {
       if (error) console.error(error);
       if (response.statusCode != 200) {
-        return res.status(404).json({ msg: "No Github profile found" });
+        return res.status(404).json({ msg: "Профиль Github не обнаружен" });
       }
       res.json(JSON.parse(body));
     });

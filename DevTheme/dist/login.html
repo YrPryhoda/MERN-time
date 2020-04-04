@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="https://kit.fontawesome.com/497cd3b73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <h1>
+      <a href="dashboard.html"> <i class="fas fa-code"></i> <span class="logo"> Войти в АйТи </span></a>
+    </h1>
+    <ul>
+      <li><a href="profiles.html">Люди</a></li>
+      <li><a href="register.html">Регистрация</a></li>
+      <li><a href="login.html">Логин</a></li>
+    </ul>
+  </nav>
+  <section class="container">
+    <!-- Alert-->
+    <div class="alert alert-danger">
+      Ошибка заполнения
+    </div>
+    <h1 class="large text-primary">
+      Страница входа
+    </h1>
+    <p class="lead"><i class="fas fa-user"></i>
+      <span>Войти</span>
+    </p>
+    <form action="dashboard.html" method="post" class="form">
+      <div class="form-group">
+        <input type="email" name="" placeholder="Ваша почта" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="" placeholder="Создйте  надежный пароль" minlength="6">
+      </div>
+      <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+    <p class="my-1">
+      У вас еще не создан аккаунт? <a href="register.html">Зарегистрируйтесь!</a>
+    </p>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

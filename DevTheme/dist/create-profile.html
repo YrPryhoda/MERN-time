@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личные данные</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="https://kit.fontawesome.com/497cd3b73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <h1>
+      <a href="dashboard.html">
+        <i class="fas fa-code"></i> <span class="logo"> Войти в АйТи </span></a>
+    </h1>
+    <ul>
+      <li><a href="profiles.html">Люди</a></li>
+      <li><a href="posts.html">Публикации</a></li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-user"></i>
+          <span class="hide-sm"> Портфолио </span></a>
+      </li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="hide-sm"> Выйти </span></a>
+      </li>
+    </ul>
+  </nav>
+  <section class="container">
+    <h1 class="large text-primary">
+      Создать профиль
+    </h1>
+    <p class="lead">
+      <i class="fas fa-user"></i> Добавим немного информации о себе
+    </p>
+    <small>* - обязательные поля</small>
+    <form action="" class="form">
+      <div class="form-group">
+        <select name="status" id="">
+          <option value="0"> * Выберите свой статус</option>
+          <option value="Developer"> Developer </option>
+          <option value="Junior Developer"> Junior Developer </option>
+          <option value="Senior Developer"> Senior Developer </option>
+          <option value="Manager"> Менеджер </option>
+          <option value="Student or Learning"> Студент или учащийся </option>
+          <option value="Instructor"> Ментор </option>
+          <option value="Intern"> Стажер </option>
+          <option value="Other"> Другое </option>
+        </select>
+        <small class="form-text">
+          Дайте нам понять на каком вы этапе своей карьеры
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Компания" name="company"/>
+        <small class="form-text">
+          Вы можете быть владельцем компании или работать в ней
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Ваш сайт" name="website"/>
+        <small class="form-text">
+          Это может быть ваш сайт или сайт компании
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Местоположение" name="location"/>
+        <small class="form-text">
+          Укажите свой город, регион, страну
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="* Навыки" name="skills"/>
+        <small class="form-text">
+          Перечислите ваши навыки через запятую (Напр. HTML,CSS,JS,NodeJS)
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Имя на GitHub" name="githubusername"/>
+        <small class="form-text">
+          Введите ваше имя на GitHub и мы отобразим ваши последние репозитории
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Короткая биография" name="bio"/>
+        <small class="form-text">
+          Расскажите немного о себе
+        </small>
+      </div>
+
+      <div class="my-2">
+        <button type="button" name="btn" class="btn btn-profiles">
+          Добавить ссылки на социльные сети
+        </button>
+        <small class="form-text">
+          По желанию
+        </small>
+      </div>
+
+      <div class="form-group social-input">
+        <i class="fab fa-twitter fa-2x"></i>
+        <input type="text" name="twitter" placeholder="Twitter URL"/>
+      </div>
+      <div class="form-group social-input">
+        <i class="fab fa-facebook fa-2x"></i>
+        <input type="text" name="facebook" placeholder="Facebook URL"/>
+      </div>
+      <div class="form-group social-input">
+        <i class="fab fa-youtube fa-2x"></i>
+        <input type="text" name="youtube" placeholder="Youtube URL"/>
+      </div>
+      <div class="form-group social-input">
+        <i class="fab fa-linkedin fa-2x"></i>
+        <input type="text" name="linkedin" placeholder="Linkedin URL"/>
+      </div>
+      <div class="form-group social-input">
+        <i class="fab fa-instagram fa-2x"></i>
+        <input type="text" name="instagram" placeholder="Instagram URL"/>
+      </div>
+      </div>
+
+      <input type="submit" name="" value="Подтвердить" class="btn btn-primary my-1 py-1" />
+      <a href="dashboard.html"> Назад</a>
+    </form>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

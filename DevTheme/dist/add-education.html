@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Образование</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="https://kit.fontawesome.com/497cd3b73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <h1>
+      <a href="dashboard.html">
+        <i class="fas fa-code"></i> <span class="logo"> Войти в АйТи </span></a>
+    </h1>
+    <ul>
+      <li><a href="profiles.html">Люди</a></li>
+      <li><a href="posts.html">Публикации</a></li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-user"></i>
+          <span class="hide-sm"> Портфолио </span></a>
+      </li>
+      <li><a href="dashboard.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="hide-sm"> Выйти </span></a>
+      </li>
+    </ul>
+  </nav>
+  <section class="container">
+    <h1 class="large text-primary">
+      Добавить или изменить место обучения
+    </h1>
+    <p class="lead">
+      <i class="fas fa-graduation-cap"></i>
+      Укажите школу, коледж, университет
+    </p>
+    <small>* Обязательные поля</small>
+
+    <form action="" class="form">
+      <div class="form-group">
+        <input type="text" placeholder="* Название" 
+        name="school" required />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="* Специальность" 
+        name="degree" required />
+      </div>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Факультет или профиль" 
+        name="fieldofstudy" />
+      </div>
+
+      <div class="form-group">
+        <h4 class="text-dark">Дата начала обучения</h4>
+        <input type="date" name="from" />
+      </div>
+      <div class="form-group">
+        <h4 class="text-dark">Дата окончания</h4>
+        <input type="date" name="to" />
+      </div>
+      <div class="form-group">
+        <p><input type="checkbox" name="current" value="" id="current" />
+          <label for="current"> Еще учусь </label></p>
+      </div>
+      <div class="form-group">
+        <textarea name="description" cols="30" rows="5" 
+        placeholder="Небольшое описание">
+        </textarea>
+      </div>
+      </div>
+      <input type="submit" name="" value="Подтвердить" class="btn btn-primary my-1" />
+      <a href="dashboard.html" class="btn my-1"> Назад</a>
+    </form>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

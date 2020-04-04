@@ -1,0 +1,176 @@
+//Container
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+// Text styles
+.x-large {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-primary {
+  color: $primary-color;
+}
+.text-dark {
+  color: $dark-color;
+}
+.round-img {
+  border-radius: 50%;
+}
+.line {
+  border-top: 1px dashed #cccccc;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+
+.bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-light {
+    @include set-background($light-color);
+    border: #cccccc 1px solid;
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-white {
+    @include set-background(#ffffff);
+    border: #cccccc 1px solid;
+  }
+}
+// buttons
+.buttons {
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  background: $light-color;
+  color: #333333;
+  padding: 0.4rem 1.3rem;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  border-radius: 7px;
+  width: 10rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  &.btn-primary {
+    @include set-background($primary-color);
+    &:hover {
+      background: lighten($primary-color, 5%);
+    }
+  }
+  &.btn-dark {
+    @include set-background($dark-color);
+    &:hover {
+      background: lighten($dark-color, 5%);
+    }
+  }
+  &.btn-success {
+    @include set-background($success-color);
+    color: $dark-color;
+    &:hover {
+      background: darken($success-color, 5%);
+    }
+  }
+  &.btn-danger {
+    @include set-background($danger-color);
+    &:hover {
+      background: lighten($danger-color, 5%);
+    }
+  }
+  &:hover {
+    background: lighten($dark-color, 20%);
+    color: white;
+  }
+  &-profiles {
+    text-align: center;
+    width: 40% ;
+  }
+}
+//Alerts
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333333;
+
+  &.alert-primary {
+    @include set-background($primary-color);
+  }
+  &.alert-dark {
+    @include set-background($dark-color);
+  }
+  &.alert-success {
+    @include set-background($success-color);
+  }
+  &.alert-danger {
+    @include set-background($danger-color);
+  }
+}
+//Badges 
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: left;
+  margin: 0.3rem;
+  background: $light-color;
+  color: #333333;
+
+  &.badge-primary {
+    @include set-background($primary-color);
+  }
+  &.badge-dark {
+    @include set-background($dark-color);
+  }
+  &.badge-success {
+    @include set-background($success-color);
+  }
+  &.badge-danger {
+    @include set-background($danger-color);
+  }
+}
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.table {
+  th, td {
+    padding: 1rem;
+    text-align: left;
+  }
+  th {
+    background: $light-color;
+  }
+}
