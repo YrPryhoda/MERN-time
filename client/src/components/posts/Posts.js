@@ -7,6 +7,7 @@ import PostItem from './PostItem';
 import PostForm from './PostForm';
 
 const Posts = ({ getPosts, posts: { posts, loading } }) => {
+  
   useEffect(() => {
     getPosts();
   }, [getPosts])

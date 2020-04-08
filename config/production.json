@@ -1,0 +1,6 @@
+{
+  "mongoURI":"mongodb+srv://Yaroslav:adminMERN@mernstart-wxblo.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtsecret": "mysupersecrettokenone",
+  "githubClientId": "b62624932759ce8615f5",
+  "githubSecret": "45d59a48846bcc5fc1744f68009cc2401a057528"
+}
