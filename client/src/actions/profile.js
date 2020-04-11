@@ -2,7 +2,7 @@ import axios from 'axios';
 import {
   GET_PROFILE, PROFILE_ERROR, UPDATE_PROFILE,
   CLEAR_PROFILE, DELETE_ACCOUNT, GET_PROFILES,
-  GET_REPOS
+  GET_REPOS, ADD_PHOTO
 } from './types';
 import { setAlert } from './alert';
 
@@ -202,4 +202,5 @@ export const deleteAccount = () => async dispatch => {
     }
   }
 }
-//
+
+

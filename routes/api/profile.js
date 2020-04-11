@@ -7,6 +7,9 @@ const Post = require('../../models/Posts');
 const { check, validationResult } = require('express-validator');
 const request = require('request');
 const config = require('config');
+const fs = require('fs')
+const Grid = require('gridfs-stream');
+const path = require('path')
 //@route    GET api/profile/me
 //@desc     Own profile route
 //@access   Private
@@ -120,7 +123,7 @@ router.get('/user/:user_id', async (req, res) => {
 router.delete('/', auth, async (req, res) => {
   try {
     // Remove posts
-    await Post.deleteMany({user: req.user.id});
+    await Post.deleteMany({ user: req.user.id });
     // Remove profile
     await Profile.findOneAndRemove({ user: req.user.id });
     // Remove user

@@ -15,7 +15,6 @@ import Register from '../layout/Register';
 import Alert from '../layout/Alert';
 import CreateProfile from '../dashboard/create_forms/CreateProfile';
 
-
 const Routes = () => {
   return (
     <section className='container'>
